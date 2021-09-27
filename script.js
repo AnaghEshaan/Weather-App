@@ -12,7 +12,7 @@ var country=document.querySelector(".country");
 
 button.addEventListener('click',function()
 {
-    console.log(inputvalue.value);
+    
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputvalue.value+'&appid=1ff4fabb95d474aa3c3c0ef3c88203db')
     .then(response=>response.json())  
     .then(data=>{
